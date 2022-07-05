@@ -1,9 +1,9 @@
-name: node03
+name: master1
 on: 
   repository_dispatch:
-    types: [node03]
+    types: [master1]
 jobs:
-  node03:
+  master1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: ./.github/cust-actions/setup-node
         with:
-          id: "node03"
+          id: "master1"
           frps_host: ${{ secrets.FRPS_HOST }}
-          frps_remote_port: 7003
+          frps_remote_port: 7001
           keepalive: ${{ github.event.client_payload.keepalive }}
