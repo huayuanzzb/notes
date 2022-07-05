@@ -18,7 +18,10 @@ runs:
     - name: Install frpc
       shell: bash
       run: |
+        sudo swapoff -a
+        sudo systemctl stop ufw
         sudo hostnamectl set-hostname ${{ inputs.id }}
+      
 
         wget https://github.com/fatedier/frp/releases/download/v0.42.0/frp_0.42.0_linux_amd64.tar.gz
         tar xf frp_0.42.0_linux_amd64.tar.gz
