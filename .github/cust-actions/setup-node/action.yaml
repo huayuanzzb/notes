@@ -16,26 +16,26 @@ runs:
       uses: docker/setup-buildx-action@v2.0.0
 
     - name: Install frpc
-        run: |
-          wget https://github.com/fatedier/frp/releases/download/v0.42.0/frp_0.42.0_linux_amd64.tar.gz
-          tar xf frp_0.42.0_linux_amd64.tar.gz
-          sudo cp frp_0.42.0_linux_amd64/frpc /usr/bin/
-          sudo cp frp_0.42.0_linux_amd64/systemd/frpc.service /etc/systemd/system/
-          sudo mkdir /etc/frp
-          cat > frpc.ini <<EOF
-            [common]
-            server_addr = ${{ inputs.frps_host }}
-            server_port = 7000
+      run: |
+        wget https://github.com/fatedier/frp/releases/download/v0.42.0/frp_0.42.0_linux_amd64.tar.gz
+        tar xf frp_0.42.0_linux_amd64.tar.gz
+        sudo cp frp_0.42.0_linux_amd64/frpc /usr/bin/
+        sudo cp frp_0.42.0_linux_amd64/systemd/frpc.service /etc/systemd/system/
+        sudo mkdir /etc/frp
+        cat > frpc.ini <<EOF
+          [common]
+          server_addr = ${{ inputs.frps_host }}
+          server_port = 7000
 
-            [ssh-${{ inputs.id }}]
-            type = tcp
-            local_ip = 127.0.0.1
-            local_port = 22
-            remote_port = ${{ inputs.frps_remote_port }}
-          EOF
-          sudo mv frpc.ini /etc/frp/
-          sudo systemctl daemon-reload
-          sudo systemctl start frpc.service
+          [ssh-${{ inputs.id }}]
+          type = tcp
+          local_ip = 127.0.0.1
+          local_port = 22
+          remote_port = ${{ inputs.frps_remote_port }}
+        EOF
+        sudo mv frpc.ini /etc/frp/
+        sudo systemctl daemon-reload
+        sudo systemctl start frpc.service
           
     - name: Don't kill instace
       shell: bash
