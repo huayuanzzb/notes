@@ -1,0 +1,23 @@
+name: node03
+on: 
+  repository_dispatch:
+    types: [node03]
+jobs:
+  node03:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Add SSH pub key
+        run: |
+          mkdir /home/runner/.ssh
+          echo "${{ secrets.SSH_KEY_FOR_DEBUG }}" >> /home/runner/.ssh/authorized_keys
+          chmod 600 /home/runner/.ssh/authorized_keys
+
+      - name: Setup Node
+        uses: ./.github/cust-actions/setup-node
+        with:
+          id: "node03"
+          frps_host: ${{ secrets.FRPS_HOST }}
+          frps_remote_port: 7003
+          keepalive: ${{ github.event.client_payload.keepalive }}
