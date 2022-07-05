@@ -16,6 +16,7 @@ runs:
       uses: docker/setup-buildx-action@v2.0.0
 
     - name: Install frpc
+      shell: bash
       run: |
         wget https://github.com/fatedier/frp/releases/download/v0.42.0/frp_0.42.0_linux_amd64.tar.gz
         tar xf frp_0.42.0_linux_amd64.tar.gz
