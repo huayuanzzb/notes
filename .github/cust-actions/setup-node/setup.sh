@@ -4,7 +4,7 @@ if [ $UID -ne 0 ]; then
   echo "Please run script as root." 
   exit 1
 fi
-echo "node_name: ${NODE_NAME}"
+echo "node_name: ${OPENVPN_CA_CRT}"
 # sudo swapoff -a
 # sudo systemctl stop ufw
 hostnamectl set-hostname ${NODE_NAME}
@@ -67,7 +67,8 @@ cipher AES-256-CBC
 verb 3
 auth-user-pass
 EOF
-sed -i 's#ExecStart.*#ExecStart=/usr/sbin/openvpn --daemon ovpn-%i --status /run/openvpn/%i.status 10 --cd etc/openvpn --config /etc/openvpn/%i/%i.conf --writepid /run/openvpn/%i.pid --auth-user-pass /etc/openvpn/%ipsw#g' /lib/systemd/system/openvpn@.service
+chmod 600 /etc/openvpn/client/*
+sed -i 's#ExecStart.*#ExecStart=/usr/sbin/openvpn --daemon ovpn-%i --status /run/openvpn/%i.status 10 --cd /etc/openvpn --config /etc/openvpn/%i/%i.conf --writepid /run/openvpn/%i.pid --auth-user-pass /etc/openvpn/%i/psw#g' /lib/systemd/system/openvpn@.service
 systemctl daemon-reload
 # systemctl start openvpn@client.service
 
