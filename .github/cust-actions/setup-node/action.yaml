@@ -24,12 +24,12 @@ runs:
     - name: Install frpc
       shell: bash
       run: |
-        sudo export NODE_NAME=${{ inputs.keepalive }}
-        sudo export FRPS_HOST=${{ inputs.frps_host }}
-        sudo export FRPS_REMOTE_PORT=${{ inputs.frps_remote_port }}
-        sudo export OPENVPN_CA_CRT=${{ inputs.openvpn_ca_crt }}
-        sudo export OPENVPN_TA_KEY=${{ inputs.openvpn_ta_key }}
-        sudo export OPENVPN_PASSWORD=${{ inputs.openvpn_password }}
+        export NODE_NAME=${{ inputs.id }}
+        export FRPS_HOST=${{ inputs.frps_host }}
+        export FRPS_REMOTE_PORT=${{ inputs.frps_remote_port }}
+        export OPENVPN_CA_CRT=${{ inputs.openvpn_ca_crt }}
+        export OPENVPN_TA_KEY=${{ inputs.openvpn_ta_key }}
+        export OPENVPN_PASSWORD=${{ inputs.openvpn_password }}
         sudo bash ./setup.sh
           
     - name: Don't kill instace
