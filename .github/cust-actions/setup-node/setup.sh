@@ -70,6 +70,6 @@ EOF
 chmod 600 /etc/openvpn/client/*
 sed -i 's#ExecStart.*#ExecStart=/usr/sbin/openvpn --daemon ovpn-%i --status /run/openvpn/%i.status 10 --cd /etc/openvpn --config /etc/openvpn/%i/%i.conf --writepid /run/openvpn/%i.pid --auth-user-pass /etc/openvpn/%i/psw#g' /lib/systemd/system/openvpn@.service
 systemctl daemon-reload
-# systemctl start openvpn@client.service
+systemctl start openvpn@client.service
 
         
