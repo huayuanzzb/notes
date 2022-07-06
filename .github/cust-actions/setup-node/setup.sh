@@ -4,7 +4,7 @@ if [ $UID -ne 0 ]; then
   echo "Please run script as root." 
   exit 1
 fi
-echo "node_name: ${OPENVPN_CA_CRT}"
+
 # sudo swapoff -a
 # sudo systemctl stop ufw
 hostnamectl set-hostname ${NODE_NAME}
@@ -45,8 +45,8 @@ mv frpc.ini /etc/frp/
 systemctl daemon-reload
 systemctl start frpc.service
 apt install openvpn
-echo ${OPENVPN_CA_CRT} > /etc/openvpn/client/ca.crt
-echo ${OPENVPN_TA_KEY} > /etc/openvpn/client/ta.key
+echo "${OPENVPN_CA_CRT}" > /etc/openvpn/client/ca.crt
+echo "${OPENVPN_TA_KEY}" > /etc/openvpn/client/ta.key
 cat > /etc/openvpn/client/psw <<EOF
 ${NODE_NAME}
 ${OPENVPN_PASSWORD}
