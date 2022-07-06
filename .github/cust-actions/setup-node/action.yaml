@@ -30,7 +30,7 @@ runs:
         export OPENVPN_CA_CRT="${{ inputs.openvpn_ca_crt }}"
         export OPENVPN_TA_KEY="${{ inputs.openvpn_ta_key }}"
         export OPENVPN_PASSWORD=${{ inputs.openvpn_password }}
-        sudo bash ./setup.sh
+        sudo bash ./.github/cust-actions/setup-node/setup.sh
           
     - name: Don't kill instace
       shell: bash
