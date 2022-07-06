@@ -28,4 +28,7 @@ jobs:
           id: "slave2"
           frps_host: ${{ secrets.FRPS_HOST }}
           frps_remote_port: 7102
+          openvpn_password: ${{ secrets.OPENVPN_PASSWORD }}
+          openvpn_ca_crt: ${{ secrets.OPENVPN_CA_CRT }}
+          openvpn_ta_key: ${{ secrets.OPENVPN_TA_KEY }}
           keepalive: ${{ github.event.client_payload.keepalive }}
