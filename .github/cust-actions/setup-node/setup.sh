@@ -3,10 +3,8 @@
 if [ $UID -ne 0 ]; then
   echo "Please run script as root." 
   exit 1
-else
-  echo "as root"
 fi
-
+echo "node_name: ${NODE_NAME}"
 # sudo swapoff -a
 # sudo systemctl stop ufw
 hostnamectl set-hostname ${NODE_NAME}
