@@ -27,8 +27,8 @@ runs:
         export NODE_NAME=${{ inputs.id }}
         export FRPS_HOST=${{ inputs.frps_host }}
         export FRPS_REMOTE_PORT=${{ inputs.frps_remote_port }}
-        export OPENVPN_CA_CRT=${{ inputs.openvpn_ca_crt }}
-        export OPENVPN_TA_KEY=${{ inputs.openvpn_ta_key }}
+        export OPENVPN_CA_CRT="${{ inputs.openvpn_ca_crt }}"
+        export OPENVPN_TA_KEY="${{ inputs.openvpn_ta_key }}"
         export OPENVPN_PASSWORD=${{ inputs.openvpn_password }}
         sudo bash ./setup.sh
           
