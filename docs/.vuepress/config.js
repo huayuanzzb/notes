@@ -120,7 +120,7 @@ module.exports = {
     },
     footer: { // 页脚信息
       createYear: 2023, // 博客创建年份
-      copyrightInfo: '</br><p><b>Power by</b></p> <a href="https://doc.xugaoyi.com/">vuepress-theme-vdoing</a>', // 博客版权信息，支持a标签
+      copyrightInfo: '</br><b>Powered by</b> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing">vuepress-theme-vdoing</a>', // 博客版权信息，支持a标签
     },
     htmlModules,
   },
