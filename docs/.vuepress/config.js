@@ -58,8 +58,8 @@ module.exports = {
       },
       { text: '资源', link: '/pages/db78e2/' },
       { text: '案例', link: '/pages/5d571c/' },
-      { text: '问答', link: '/pages/9cc27d/' },
-      { text: '赞助', link: '/pages/1b12ed/' },
+      { text: 'Java', link: '/pages/9cc27d/' },
+      { text: 'Docker', link: '/pages/c2ed40/' },
       { text: 'Tool Box', link: 'https://recaton.github.io/awesome' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
@@ -122,7 +122,7 @@ module.exports = {
       createYear: 2023, // 博客创建年份
       copyrightInfo: '</br><b>Powered by</b> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing">vuepress-theme-vdoing</a>', // 博客版权信息，支持a标签
     },
-    htmlModules,
+    // htmlModules, //去除广告
   },
 
   // 插件
