@@ -50,7 +50,7 @@ module.exports = {
           { text: 'PostgreSQL 全文搜索', link: '/pages/a20ce8/' },
           { text: '依赖注入', link: '/pages/f14bdb/' },
           { text: '开发常见问题', link: '/pages/3216b0/' },
-          { text: '目录页配置', link: '/pages/54651a/' },
+          { text: '逻辑删除', link: '/pages/54651a/' },
           { text: '添加摘要', link: '/pages/1cc523/' },
           { text: '修改主题颜色和样式', link: '/pages/f51918/' },
           { text: '评论栏', link: '/pages/ce175c/' },
