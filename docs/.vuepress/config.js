@@ -57,7 +57,7 @@ module.exports = {
         ]
       },
       { text: '资源', link: '/pages/db78e2/' },
-      { text: '案例', link: '/pages/5d571c/' },
+      { text: 'TODO', link: '/pages/5d571c/' },
       { text: 'Java', link: '/pages/9cc27d/' },
       { text: 'Docker', link: '/pages/c2ed40/' },
       { text: 'Tool Box', link: 'https://recaton.github.io/awesome' },
