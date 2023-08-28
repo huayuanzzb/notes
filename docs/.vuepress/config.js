@@ -58,7 +58,14 @@ module.exports = {
       },
       { text: '资源', link: '/pages/db78e2/' },
       { text: 'TODO', link: '/pages/5d571c/' },
-      { text: 'Java', link: '/pages/9cc27d/' },
+      { text: 'Java', link: '/pages/9cc27d/', items: [
+        { text: 'REST API', link: '/pages/9cc27d/' },
+        { text: '设计模式', link: '/pages/78465a/', items: [
+          { text: '装饰器模式', link: '/pages/78465a/'}
+            ] 
+          },
+        ] 
+      },
       { text: 'Docker', link: '/pages/c2ed40/' },
       { text: 'Tool Box', link: 'https://recaton.github.io/awesome' },
     ],
