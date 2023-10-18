@@ -91,3 +91,18 @@ body .vuepress-plugin-demo-block__wrapper
   .highlight
     color: $accentColor
     font-weight: bold
+    
+// 设置文章内容的最大宽度
+.page>* {
+  max-width: 1800px !important;
+}
+.page .theme-vdoing-wrapper .page-edit {
+  max-width: calc(100% - 0px) !important;
+}
+.page .theme-vdoing-wrapper .page-nav-wapper .page-nav {
+  max-width: calc(100% - 0px) !important;
+}
+
+.theme-vdoing-content:not(.custom) {
+    max-width: calc(100% - 0px) !important;
+}
