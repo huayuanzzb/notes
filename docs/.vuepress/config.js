@@ -7,7 +7,7 @@ module.exports = {
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
-  title: "inotes",
+  title: "notes",
   description: '我的笔记',
   base: '/notes/',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -53,7 +53,7 @@ module.exports = {
           { text: '逻辑删除', link: '/pages/54651a/' },
           { text: 'TCP 粘包和拆包', link: '/pages/1cc523/' },
           { text: 'netty 粘包和拆包', link: '/pages/f51918/' },
-          { text: '评论栏', link: '/pages/ce175c/' },
+          { text: '在k8s集群中搭建一个harbor私有仓库', link: '/pages/ce175c/' },
         ]
       },
       { text: '资源', link: '/pages/db78e2/' },
