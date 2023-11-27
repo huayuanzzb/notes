@@ -31,7 +31,6 @@ module.exports = {
           { text: '核心配置和约定', link: '/pages/33d574/' },
           { text: '自动生成front matter', link: '/pages/088c16/' },
           { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
-          { text: 'Markdown 中使用组件', link: '/pages/197691/' },
           {
             text: '相关文章', items: [
               { text: '使目录栏支持h2~h6标题', link: '/pages/8dfab5/' },
@@ -60,6 +59,7 @@ module.exports = {
       { text: 'TODO', link: '/pages/5d571c/' },
       { text: 'Java', link: '/pages/9cc27d/', items: [
         { text: 'REST API', link: '/pages/9cc27d/' },
+        { text: '使用 IntelliJ IDEA 反编译 jar', link: '/pages/197691/' },
         { text: '设计模式', link: '/pages/78465a/', items: [
           { text: '装饰器模式', link: '/pages/78465a/'}
             ] 
