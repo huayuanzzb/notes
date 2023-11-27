@@ -29,8 +29,6 @@ module.exports = {
           { text: '快速上手', link: '/pages/793dcb/' },
           { text: '目录结构', link: '/pages/2f674a/' },
           { text: '核心配置和约定', link: '/pages/33d574/' },
-          { text: '自动生成front matter', link: '/pages/088c16/' },
-          { text: 'Markdown 容器', link: '/pages/d0d7eb/' },
           {
             text: '相关文章', items: [
               { text: '使目录栏支持h2~h6标题', link: '/pages/8dfab5/' },
@@ -53,6 +51,8 @@ module.exports = {
           { text: 'TCP 粘包和拆包', link: '/pages/1cc523/' },
           { text: 'netty 粘包和拆包', link: '/pages/f51918/' },
           { text: '在k8s集群中搭建一个harbor私有仓库', link: '/pages/ce175c/' },
+          { text: '优雅停机', link: '/pages/d0d7eb/' },
+          { text: 'helm 命令学习', link: '/pages/088c16/' },
         ]
       },
       { text: '资源', link: '/pages/db78e2/' },
