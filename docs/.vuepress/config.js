@@ -28,7 +28,6 @@ module.exports = {
           { text: '介绍', link: '/pages/a2f161/' },
           { text: '快速上手', link: '/pages/793dcb/' },
           { text: '目录结构', link: '/pages/2f674a/' },
-          { text: '核心配置和约定', link: '/pages/33d574/' },
           {
             text: '相关文章', items: [
               { text: '使目录栏支持h2~h6标题', link: '/pages/8dfab5/' },
@@ -55,7 +54,11 @@ module.exports = {
           { text: 'helm 命令学习', link: '/pages/088c16/' },
         ]
       },
-      { text: 'python', link: '/pages/db78e2/' },
+      { text: 'python', link: '/pages/db78e2/', items: [
+        { text: 'yield 关键字', link: '/pages/db78e2/' },
+        { text: '不定参数', link: '/pages/33d574/' },
+        ]
+      },
       { text: 'TODO', link: '/pages/5d571c/' },
       { text: 'Java', link: '/pages/9cc27d/', items: [
         { text: 'REST API', link: '/pages/9cc27d/' },
