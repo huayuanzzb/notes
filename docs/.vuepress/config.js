@@ -55,7 +55,7 @@ module.exports = {
           { text: 'helm 命令学习', link: '/pages/088c16/' },
         ]
       },
-      { text: '资源', link: '/pages/db78e2/' },
+      { text: 'python', link: '/pages/db78e2/' },
       { text: 'TODO', link: '/pages/5d571c/' },
       { text: 'Java', link: '/pages/9cc27d/', items: [
         { text: 'REST API', link: '/pages/9cc27d/' },
