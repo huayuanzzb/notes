@@ -36,7 +36,6 @@ module.exports = {
               { text: '部署', link: '/pages/0fc1d2/' },
               { text: '关于写文章和H1标题', link: '/pages/9ae0bd/' },
               { text: '关于博客搭建与管理', link: '/pages/26997d/' },
-              { text: '在线编辑和新增文章的方法', link: '/pages/c5a54d/' },
             ]
           }
         ]
@@ -63,6 +62,7 @@ module.exports = {
       { text: 'Java', link: '/pages/9cc27d/', items: [
         { text: 'REST API', link: '/pages/9cc27d/' },
         { text: '使用 IntelliJ IDEA 反编译 jar', link: '/pages/197691/' },
+        { text: 'Spring Boot 删除前后空白字符', link: '/pages/c5a54d/' },
         { text: '设计模式', link: '/pages/78465a/', items: [
           { text: '装饰器模式', link: '/pages/78465a/'}
             ] 
